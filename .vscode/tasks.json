@@ -1,0 +1,37 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "build console-camera",
+      "command": "g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-O0",
+        "${workspaceFolder}/console-camera.cc",
+        "-o",
+        "${workspaceFolder}/output/console-camera.exe",
+        "-lmf",
+        "-lmfplat",
+        "-lmfreadwrite",
+        "-lmfuuid",
+        "-lwindowscodecs",
+        "-lole32",
+        "-lshlwapi",
+        "-luuid",
+        "-lstrmiids",
+        "-lquartz"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "调试器生成的任务。"
+    }
+  ],
+  "version": "2.0.0"
+}
